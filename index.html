@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-приложение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 25px;
+            margin: 10px 0;
+            width: 80%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .button:active {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Добро пожаловать в мини-приложение</h1>
+
+    <a href="https://example.com/dnevnik" class="button">Вход в дневник</a>
+    <button class="button" id="schedule-button">Посмотреть расписание</button>
+    <button class="button" id="homework-button">Отправить домашнее задание</button>
+
+    <script>
+        // Обработчик для кнопки "Посмотреть расписание"
+        document.getElementById('schedule-button').onclick = function() {
+            alert("Открываю расписание...");
+            // Здесь можно добавить редирект или действие для расписания
+        };
+
+        // Обработчик для кнопки "Отправить домашнее задание"
+        document.getElementById('homework-button').onclick = function() {
+            alert("Открываю форму для отправки домашнего задания...");
+            // Здесь можно добавить редирект или действие для отправки домашнего задания
+        };
+    </script>
+
+</body>
+</html>
